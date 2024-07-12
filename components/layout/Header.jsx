@@ -27,49 +27,13 @@ const Header = ({handleHidden}) => {
                             </a>
                         </Link>
                         <ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
-                            <li className="group relative pt-4 pb-4 has-child">
-                                <Link href="/" legacyBehavior>
+                            
+                            <li className="pt-4 pb-4">
+                                <Link href="/index-3" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                                         Home
                                     </a>
                                 </Link>
-                                <ul className="drop-down-menu min-w-200">
-                                    <li>
-                                        <Link href="/" legacyBehavior>
-                                            <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                                                Landing page 1
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/index-2" legacyBehavior>
-                                            <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                                                Landing page 2
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/index-3" legacyBehavior>
-                                            <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                                                Landing page 3
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/index-4" legacyBehavior>
-                                            <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                                                Landing page 4
-                                            </a>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/index-5" legacyBehavior>
-                                            <a className="menu-sub-item text-sm text-blueGray-600 hover:text-blueGray-500">
-                                                Landing page 5
-                                            </a>
-                                        </Link>
-                                    </li>
-                                </ul>
                             </li>
                             <li className="pt-4 pb-4">
                                 <Link href="/about" legacyBehavior>
