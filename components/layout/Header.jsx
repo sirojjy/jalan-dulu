@@ -21,7 +21,7 @@ const Header = ({handleHidden}) => {
                             <a className="text-3xl font-semibold leading-none">
                                 <img
                                     className="h-10"
-                                    src="/assets/imgs/logos/monst-logo.svg"
+                                    src="/assets/logo-nama.png"
                                     alt="Monst"
                                 />
                             </a>
@@ -29,7 +29,7 @@ const Header = ({handleHidden}) => {
                         <ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
                             
                             <li className="pt-4 pb-4">
-                                <Link href="/index-3" legacyBehavior>
+                                <Link href="/index" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                                         Home
                                     </a>
@@ -38,18 +38,18 @@ const Header = ({handleHidden}) => {
                             <li className="pt-4 pb-4">
                                 <Link href="/about" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                                        About Us
+                                        Promo
                                     </a>
                                 </Link>
                             </li>
                             <li className="pt-4 pb-4">
                                 <Link href="/services" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                                        Services
+                                        Category
                                     </a>
                                 </Link>
                             </li>
-                            <li className="group relative pt-4 pb-4 has-child">
+                            {/* <li className="group relative pt-4 pb-4 has-child">
                                 <Link href="#" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                                         Company
@@ -136,11 +136,18 @@ const Header = ({handleHidden}) => {
                                         </Link>
                                     </li>
                                 </ul>
+                            </li> */}
+                            <li className="pt-4 pb-4">
+                                <Link href="/contact" legacyBehavior>
+                                    <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
+                                        Activity
+                                    </a>
+                                </Link>
                             </li>
                             <li className="pt-4 pb-4">
                                 <Link href="/contact" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                                        Contact
+                                        About Us
                                     </a>
                                 </Link>
                             </li>
