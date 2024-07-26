@@ -20,7 +20,7 @@ const Header = ({handleHidden}) => {
                         <Link href="/" legacyBehavior>
                             <a className="text-3xl font-semibold leading-none">
                                 <img
-                                    className="h-10"
+                                    className="h-12"
                                     src="/assets/logo-nama.png"
                                     alt="Monst"
                                 />
@@ -29,7 +29,7 @@ const Header = ({handleHidden}) => {
                         <ul className="hidden lg:flex lg:items-center lg:w-auto lg:space-x-12">
                             
                             <li className="pt-4 pb-4">
-                                <Link href="/index" legacyBehavior>
+                                <Link href="/" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                                         Home
                                     </a>

@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './pages/**/*.{html,js,jsx}',
     './components/**/*.{html,js,jsx}',
+    "./node_modules/tw-elements/js/**/*.js",
   ],
   theme: {
       colors: {
@@ -91,5 +92,5 @@ module.exports = {
   variants: {
       extend: {}
   },
-  plugins: []
+  plugins: [require("tw-elements/plugin.cjs")],
 };

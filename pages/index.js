@@ -1,14 +1,13 @@
 import React from 'react';
 import Layout from '../components/layout/Layout';
 import Slider3 from '../components/slider/Slider3';
-import TextEffect from "../components/elements/TextEffect";
 import Link from "next/link";
 
-const Index3 = () => {
+const Index = () => {
     return (
         <>
             <Layout>
-                <section className="hero-3">
+                {/* <section className="hero-3">
                     <div className="container">
                         <div className="flex flex-wrap items-center -mx-3">
                             <div className="w-full lg:w-2/5 px-3">
@@ -40,10 +39,10 @@ const Index3 = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 <section className="py-12 md:pt-20 md:pb-12" id="how-we-work">
                     <div className="container">
-                        <div className="max-w-lg mx-auto mb-20 text-center">
+                        {/* <div className="max-w-lg mx-auto mb-20 text-center">
                             <span className="inline-block text-xs py-1 px-3 text-blue-700 font-semibold bg-blue-100 rounded-xl wow animate__animated animate__fadeIn" data-wow-delay=".5s">
                                 How we work
                             </span>
@@ -53,16 +52,9 @@ const Index3 = () => {
                             <p className="text-blueGray-400 wow animate__animated animate__fadeIn" data-wow-delay=".3s">
                                 IT Solution For Your Business Is Best Theme
                             </p>
-                        </div>
+                        </div> */}
                         <div className="relative max-w-6xl mx-auto wow animate__animated animate__fadeIn" data-wow-delay=".3s">
-                            <img src="/assets/imgs/elements/macbook.png" alt="Monst" />
-                            <div className="absolute" style={{ top: "5.8%", left: "14.6%", width: "72.8%", height: "76.7%" }}>
-                                <div className="relative w-full">
-                                    <div className="carausel-fade-2 slick-carausel dot-style-1" id="carausel-fade-2-1">
-                                        <Slider3 />
-                                    </div>
-                                </div>
-                            </div>
+                            <Slider3 />
                         </div>
                     </div>
                 </section>
@@ -70,8 +62,7 @@ const Index3 = () => {
                     <div className="container">
                         <div className="max-w-lg mx-auto mb-12 text-center">
                             <h2 className="my-2 text-3xl md:text-4xl font-bold font-heading wow animate__animated animate__fadeIn" data-wow-delay=".1s">
-                                We Consultant to Get <br />
-                                <span className="text-blue-500">Our Business</span> Plan
+                                Temukan Promo Menarik <br />
                             </h2>
                             <p className="text-blueGray-400 leading-loose wow animate__animated animate__fadeIn" data-wow-delay=".3s">
                                 Business solution company sit our any how site used the our company any site us it-solve theme is very professional
@@ -358,4 +349,4 @@ const Index3 = () => {
     );
 };
 
-export default Index3;
+export default Index;
