@@ -1,0 +1,292 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Alerts"})
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="flex wrapper">
+
+        @@include('partials/sidenav.html')
+
+        <!-- Start Page Content here -->
+        <div class="page-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="flex-grow p-6">
+
+                <div class="container">
+
+                    @@include("partials/page-title.html", {"subtitle":"Components","title":"Alerts"})
+
+                    <div class="grid 2xl:grid-cols-2 grid-cols-1 gap-6">
+                        <div class="card">
+                            <div class="p-6">
+                                <h4 class="card-title mb-4">Basic Alert</h4>
+
+                                <div class="space-y-4">
+                                    <div class="bg-primary text-sm text-white rounded-md p-4" role="alert">
+                                        <span class="font-bold">Primary</span> alert! You should check in on some of
+                                        those fields below.
+                                    </div>
+                                    <div class="bg-secondary text-sm text-white rounded-md p-4" role="alert">
+                                        <span class="font-bold">Secondary</span> alert! You should check in on some of
+                                        those fields below.
+                                    </div>
+                                    <div class="bg-info text-sm text-white rounded-md p-4" role="alert">
+                                        <span class="font-bold">Info</span> alert! You should check in on some of those
+                                        fields below.
+                                    </div>
+                                    <div class="bg-success text-sm text-white rounded-md p-4" role="alert">
+                                        <span class="font-bold">Success</span> alert! You should check in on some of
+                                        those fields below.
+                                    </div>
+                                    <div class="bg-danger text-sm text-white rounded-md p-4" role="alert">
+                                        <span class="font-bold">Danger</span> alert! You should check in on some of
+                                        those fields below.
+                                    </div>
+                                    <div class="bg-warning  text-sm text-white rounded-md p-4" role="alert">
+                                        <span class="font-bold">Warning</span> alert! You should check in on some of
+                                        those fields below.
+                                    </div>
+                                    <div class="bg-dark text-sm text-white rounded-md p-4" role="alert">
+                                        <span class="font-bold">Dark</span> alert! You should check in on some of those
+                                        fields below.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="p-6">
+                                <h4 class="card-title mb-4">Soft color variants Alert</h4>
+
+                                <div class="space-y-4">
+                                    <div class="bg-primary/25 text-primary text-sm rounded-md p-4" role="alert">
+                                        <span class="font-bold">Primary</span> alert! You should check in on some of
+                                        those fields below.
+                                    </div>
+                                    <div class="bg-secondary/25 text-secondary text-sm rounded-md p-4" role="alert">
+                                        <span class="font-bold">Secondary</span> alert! You should check in on some of
+                                        those fields below.
+                                    </div>
+                                    <div class="bg-info/25 text-info text-sm rounded-md p-4" role="alert">
+                                        <span class="font-bold">Info</span> alert! You should check in on some of those
+                                        fields below.
+                                    </div>
+                                    <div class="bg-success/25 text-success text-sm rounded-md p-4" role="alert">
+                                        <span class="font-bold">Success</span> alert! You should check in on some of
+                                        those fields below.
+                                    </div>
+                                    <div class="bg-danger/25 text-danger text-sm rounded-md p-4" role="alert">
+                                        <span class="font-bold">Danger</span> alert! You should check in on some of
+                                        those fields below.
+                                    </div>
+                                    <div class="bg-warning/25 text-warning  text-sm rounded-md p-4" role="alert">
+                                        <span class="font-bold">Warning</span> alert! You should check in on some of
+                                        those fields below.
+                                    </div>
+                                    <div class="bg-dark/25 text-slate-900 text-sm rounded-md p-4" role="alert">
+                                        <span class="font-bold">Dark</span> alert! You should check in on some of those
+                                        fields below.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="p-6">
+                                <h4 class="card-title mb-4">Dismiss button</h4>
+
+                                <div id="dismiss-alert"
+                                    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 bg-teal-50 border border-teal-200 rounded-md p-4"
+                                    role="alert">
+                                    <div class="flex items-center gap-3">
+                                        <div class="flex-shrink-0">
+                                            <i class="ti ti-circle-check text-xl"></i>
+                                        </div>
+                                        <div class="flex-grow">
+                                            <div class="text-sm text-teal-800 font-medium">
+                                                File has been successfully uploaded.
+                                            </div>
+                                        </div>
+                                        <button data-hs-remove-element="#dismiss-alert" type="button" id="dismiss-test"
+                                            class="ms-auto h-8 w-8 rounded-full bg-gray-200 flex justify-center items-center">
+                                            <i class="ti ti-x text-xl"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-default-200 rounded-lg bg-white dark:bg-default-50 h-fit">
+                            <div class="flex items-center justify-between py-4 px-5">
+                                <div class="">
+                                    <h5 class="text-lg font-medium text-default-950 capitalize mb-1">Soft color variants
+                                    </h5>
+                                    <p class="text-default-600 text-sm font-medium">The default form of soft color.</p>
+                                </div>
+                            </div>
+                            <div class="p-5 border-t border-dashed border-default-200">
+                                <div class="flex flex-col flex-wrap gap-2">
+                                    <div class="border border-primary/20 bg-primary/10 text-sm text-primary rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Primary</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-gray-500/20 bg-gray-500/10 text-sm text-gray-500 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Gray</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-emerald-600/20 bg-emerald-600/10 text-sm text-emerald-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Emerald</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-red-600/20 bg-red-600/10 text-sm text-red-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Red</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-blue-600/20 bg-blue-600/10 text-sm text-blue-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Blue</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-yellow-600/20 bg-yellow-600/10 text-sm text-yellow-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Yellow</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-sky-600/20 bg-sky-600/10 text-sm text-sky-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Sky</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-cyan-600/20 bg-cyan-600/10 text-sm text-cyan-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Cyan</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-gray-800/20 bg-gray-800/10 text-sm text-gray-800 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Dark</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-gray-100/20 bg-gray-100/10 text-sm text-gray-100 rounded-md px-4 py-2.5 w-full"
+                                        role="alert">
+                                        <b>Light</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-default-200 rounded-lg bg-white dark:bg-default-50 h-fit">
+                            <div class="flex items-center justify-between py-4 px-5">
+                                <div class="">
+                                    <h5 class="text-lg font-medium text-default-950 capitalize mb-1">Outline Alerts</h5>
+                                    <p class="text-default-600 text-sm font-medium">The default form of border.</p>
+                                </div>
+                            </div>
+                            <div class="p-5 border-t border-dashed border-default-200">
+                                <div class="flex flex-col flex-wrap gap-2">
+                                    <div class="border border-primary text-sm text-primary rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Primary</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-gray-500 text-sm text-gray-500 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Gray</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-emerald-600 text-sm text-emerald-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Emerald</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-red-600 text-sm text-red-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Red</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-blue-600 text-sm text-blue-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Blue</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-yellow-600 text-sm text-yellow-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Yellow</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-sky-600 text-sm text-sky-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Sky</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-cyan-600 text-sm text-cyan-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Cyan</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-gray-800 text-sm text-gray-800 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <b>Dark</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                    <div class="border border-gray-100 text-sm text-gray-100 rounded-md px-4 py-2.5 w-full"
+                                        role="alert">
+                                        <b>Light</b> alert! You should check in on some of those fields below.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="border border-default-200 rounded-lg bg-white dark:bg-default-50 h-fit">
+                            <div class="flex items-center justify-between py-4 px-5">
+                                <div class="">
+                                    <h5 class="text-lg font-medium text-default-950 capitalize mb-1">Alert with icon &
+                                        Link</h5>
+                                    <p class="text-default-600 text-sm font-medium">The default form of border.</p>
+                                </div>
+                            </div>
+                            <div class="p-5 border-t border-dashed border-default-200">
+                                <div class="flex flex-col flex-wrap gap-2">
+                                    <div class="inline-flex items-center border border-primary/20 bg-primary/10 text-sm text-primary rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <i data-lucide="circle-dot-dashed" class="h-4 w-4 me-2"></i>
+                                        <span><b>Primary</b> alert! You should check.<a href="#" class="font-bold">Click
+                                                Heare</a></span>
+                                    </div>
+                                    <div class="inline-flex items-center border border-emerald-600/20 bg-emerald-600/10 text-sm text-emerald-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <i data-lucide="check-circle" class="h-4 w-4 me-2"></i>
+                                        <span><b>Emerald</b> alert! You should check.<a href="#" class="font-bold">Click
+                                                Heare</a></span>
+                                    </div>
+                                    <div class="inline-flex items-center border border-red-600/20 bg-red-600/10 text-sm text-red-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <i data-lucide="skull" class="h-4 w-4 me-2"></i>
+                                        <span><b>Red</b> alert! You should check.<a href="#" class="font-bold">Click
+                                                Heare</a></span>
+                                    </div>
+                                    <div class="inline-flex items-center border border-yellow-600/20 bg-yellow-600/10 text-sm text-yellow-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <i data-lucide="alert-triangle" class="h-4 w-4 me-2"></i>
+                                        <span><b>Yellow</b> alert! You should check.<a href="#" class="font-bold">Click
+                                                Heare</a></span>
+                                    </div>
+                                    <div class="inline-flex items-center border border-sky-600/20 bg-sky-600/10 text-sm text-sky-600 rounded-md px-4 py-3 w-full"
+                                        role="alert">
+                                        <i data-lucide="alert-octagon" class="h-4 w-4 me-2"></i>
+                                        <span><b>Sky</b> alert! You should check.<a href="#" class="font-bold">Click
+                                                Heare</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+
+    @@include('partials/footer-scripts.html')
+
+</body>
+
+</html>

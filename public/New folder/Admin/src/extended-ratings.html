@@ -1,0 +1,112 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    <link rel="stylesheet" href="assets/libs/nouislider/nouislider.min.css">
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="flex wrapper">
+
+        @@include('partials/sidenav.html')
+
+        <!-- Start Page Content here -->
+        <div class="page-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="flex-grow p-6">
+
+                @@include("partials/page-title.html", {"subtitle":"Apps","title":"Calendar"})
+
+                <div class="grid 2xl:grid-cols-2 gap-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="flex justify-between items-center">
+                                <h4 class="card-title">Rater Js Example</h4>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div id="basic-rater"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="flex justify-between items-center">
+                                <h4 class="card-title">5 star rater with step</h4>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <div id="rater-step"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="flex justify-between items-center">
+                                <h4 class="card-title">Random Number Betweeen</h4>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div id="rater-message"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="flex justify-between items-center">
+                                <h4 class="card-title">On hover Event</h4>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div>
+                                <div id="rater-onhover" class="align-middle"></div>
+                                <span class="ratingnum inline-block text-center rounded-full w-6 h-full text-sm bg-info text-white align-middle ms-2"></span>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="flex justify-between items-center">
+                                <h4 class="card-title">Clear/Reset rater</h4>
+                            </div>
+                        </div>
+
+                        <div class="p-6">
+                            <div class="flex items-center">
+                                <div id="raterreset" class="align-middle"></div>
+                                <span class="clear-rating"></span>
+                                <button id="raterreset-button" class="btn btn-sm bg-primary text-white ms-4">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+
+    @@include('partials/footer-scripts.html')
+
+    <!-- rater-js plugin -->
+    <script src="assets/libs/rater-js/index.js"></script>
+
+    <!-- Rating Demo js -->
+    <script src="assets/js/pages/extended-ratings.js"></script>
+
+</body>
+
+</html>

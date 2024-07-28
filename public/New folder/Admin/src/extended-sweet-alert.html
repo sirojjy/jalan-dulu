@@ -1,0 +1,99 @@
+@@include('partials/main.html')
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    <link href="assets/libs/sweetalert2/sweetalert2.min.css" rel="stylesheet" type="text/css" >
+
+    @@include('partials/head-css.html')
+</head>
+
+<body>
+
+    <div class="flex wrapper">
+
+        @@include('partials/sidenav.html')
+
+        <!-- Start Page Content here -->
+        <div class="page-content">
+
+            @@include('partials/topbar.html')
+
+            <main class="flex-grow p-6">
+
+                <div class="grid 2xl:grid-cols-2 grid-cols-1 gap-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="flex justify-between items-center">
+                                <h4 class="card-title mb-4">Basic</h4>
+                            </div>
+                        </div>
+                     
+                        <div class="p-6">
+                            <button type="button" class="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold leading-5 text-white hover:bg-indigo-500" id="sweetalert-basic">Click me</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="flex justify-between items-center">
+                                <h4 class="card-title mb-4">Basic</h4>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <button type="button" class="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold leading-5 text-white hover:bg-indigo-500" id="sweetalert-title">Click me</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-center border-b py-3 px-6">
+                            <h2 class="truncate card-title">Basic</h2>
+                        </div>
+                        <div class="p-6">
+                            <button type="button" class="btn bg-success text-white" id="sweetalert-success">Success</button>
+                            <button type="button" class="btn bg-warning text-white" id="sweetalert-warning">Warning</button>
+                            <button type="button" class="btn bg-info text-white" id="sweetalert-info">Info</button>
+                            <button type="button" class="btn bg-danger text-white" id="sweetalert-error">Error</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="flex items-center border-b py-3 px-6">
+                            <h2 class="truncate card-title">Basic</h2>
+                        </div>
+                        <div class="p-6">
+                            <button type="button" class="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold leading-5 text-white hover:bg-indigo-500" id="sweetalert-longcontent">Click me</button>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="flex items-center border-b py-3 px-6">
+                            <h2 class="truncate card-title">Basic</h2>
+                        </div>
+                        <div class="p-6">
+                            <button type="button" class="rounded-md bg-indigo-600 py-2 px-3 text-sm font-semibold leading-5 text-white hover:bg-indigo-500" id="sweetalert-params">Click me</button>
+                        </div>
+                    </div>
+                </div> <!-- end card -->
+
+            </main>
+
+            @@include('partials/footer.html')
+
+        </div>
+        <!-- End Page content -->
+
+    </div>
+        
+    @@include('partials/footer-scripts.html')
+
+    <!-- Sweet Alerts js -->
+    <script src="assets/libs/sweetalert2/sweetalert2.min.js"></script>
+
+    <!-- Sweet alert init js-->
+    <script src="assets/js/pages/extended-sweetalert.js"></script>
+
+</body>
+
+</html>
