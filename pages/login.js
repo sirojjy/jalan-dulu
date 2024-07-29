@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Layout from '../components/layout/Layout';
-import { loginUser } from '../components/utils/api';
+import { loginUser } from '../components/utils/controller';
 import Link from "next/link";
 
 const Login = () => {

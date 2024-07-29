@@ -1,6 +1,6 @@
 // components/Destinasi.js
 import React, { useEffect, useState } from 'react';
-import { fetchDestinations } from '../utils/api';
+import { fetchDestinations } from '../utils/controller';
 
 const Destinasi = () => {
     const [destinations, setDestinations] = useState([]);

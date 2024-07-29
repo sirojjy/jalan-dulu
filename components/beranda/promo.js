@@ -1,6 +1,6 @@
 // components/Promo.js
 import React, { useEffect, useState } from 'react';
-import { fetchPromos } from '../utils/api';
+import { fetchPromos } from '../utils/controller';
 
 const Promo = () => {
   const [promos, setPromos] = useState([]);

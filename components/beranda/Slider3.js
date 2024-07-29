@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import SwiperCore, { Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { fetchBanners } from '../utils/api';
+import { fetchBanners } from '../utils/controller';
 
 import 'swiper/swiper-bundle.min.css';
 
@@ -44,14 +44,14 @@ const Slider3 = () => {
             >
                 {banners.map((banner) => (
                     <SwiperSlide key={banner.id}>
-                        <img className="rounded w-full h-full object-cover" src={banner.imageUrl} alt={banner.name} />
+                        <img className="object-cover w-full h-full rounded" src={banner.imageUrl} alt={banner.name} />
                     </SwiperSlide>
                 ))}
             </Swiper>
 
             <button
                 type="button"
-                className="custom_prev absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md z-10"
+                className="absolute left-0 z-10 p-2 transform -translate-y-1/2 bg-gray-200 rounded-full shadow-md custom_prev top-1/2"
             >
                 <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
@@ -59,7 +59,7 @@ const Slider3 = () => {
             </button>
             <button
                 type="button"
-                className="custom_next absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-200 p-2 rounded-full shadow-md z-10"
+                className="absolute right-0 z-10 p-2 transform -translate-y-1/2 bg-gray-200 rounded-full shadow-md custom_next top-1/2"
             >
                 <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
