@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.4.2",
-    "@heroicons/react": "^1.0.5",
+    "@heroicons/react": "^1.0.6",
     "@tailwindcss/line-clamp": "^0.4.4",
     "axios": "^1.7.2",
+    "js-cookie": "^3.0.5",
     "next": "^13.1.5",
     "postcss-cli": "^10.1.0",
     "react": "^18.2.0",

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Layout from '../components/layout/Layout';
-import { loginUser } from '../components/utils/controller';
+import { loginUser } from '../components/utils/auth';
 import Link from "next/link";
+import Cookies from 'js-cookie';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -14,12 +15,20 @@ const Login = () => {
         e.preventDefault();
         try {
             const response = await loginUser(email, password);
+            console.log('Login response:', response);
             if (response.code === "200") {
-                router.push('/dashboard');
+                // Simpan token ke cookies
+                Cookies.set('token', response.token, { path: '/' });
+                Cookies.set('role', response.data.role, { path: '/' });
+
+                console.log('Authentication successful. Redirecting to dashboard...');
+                // Redirect ke halaman dashboard
+                router.push('/dashboard/index_dashboard');
             } else {
                 setError(response.message);
             }
         } catch (err) {
+            console.error('Login error:', err);
             setError('Login failed. Please try again.');
         }
     };

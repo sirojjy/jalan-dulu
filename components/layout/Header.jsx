@@ -36,14 +36,14 @@ const Header = ({handleHidden}) => {
                                 </Link>
                             </li>
                             <li className="pt-4 pb-4">
-                                <Link href="/about" legacyBehavior>
+                                <Link href="/page_promo" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                                         Promo
                                     </a>
                                 </Link>
                             </li>
                             <li className="pt-4 pb-4">
-                                <Link href="/services" legacyBehavior>
+                                <Link href="/page_category" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                                         Category
                                     </a>
@@ -51,9 +51,17 @@ const Header = ({handleHidden}) => {
                             </li>
                             
                             <li className="pt-4 pb-4">
-                                <Link href="/contact" legacyBehavior>
+                                <Link href="/page_activity" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                                         Activity
+                                    </a>
+                                </Link>
+                            </li>
+
+                            <li className="pt-4 pb-4">
+                                <Link href="dashboard/dashboard" legacyBehavior>
+                                    <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
+                                        Dashboard
                                     </a>
                                 </Link>
                             </li>

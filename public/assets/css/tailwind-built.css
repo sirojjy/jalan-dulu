@@ -426,6 +426,13 @@ video {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+.container1{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
 @media (min-width: 640px){
   .container{
     max-width: 640px;
@@ -440,10 +447,13 @@ video {
   .container{
     max-width: 1024px;
   }
+  .container1{
+    max-width: 768px;
+  }
 }
 @media (min-width: 1200px){
   .container{
-    max-width: 1200px;
+    max-width: 1024px;
   }
 }
 .drop-down-menu{
