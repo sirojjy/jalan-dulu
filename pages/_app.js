@@ -5,6 +5,7 @@ import Head from 'next/head'
 import '../public/assets/css/tailwind-built.css'
 import Preloader from '../components/elements/Preloader';
 import "swiper/css";
+import '../public/assets/css/tailwind.css';
 
 function MyApp({ Component, pageProps }) {
 

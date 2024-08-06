@@ -58,13 +58,13 @@ const Header = ({handleHidden}) => {
                                 </Link>
                             </li>
 
-                            <li className="pt-4 pb-4">
+                            {/* <li className="pt-4 pb-4">
                                 <Link href="dashboard/dashboard" legacyBehavior>
                                     <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
                                         Dashboard
                                     </a>
                                 </Link>
-                            </li>
+                            </li> */}
                         </ul>
                         <div className="hidden lg:block">
                             <Link href="/login" legacyBehavior>
