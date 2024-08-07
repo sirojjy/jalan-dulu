@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { useState, useEffect } from "react";
 
-const Header = ({handleHidden}) => {
+const Header1 = ({handleHidden}) => {
     const [scroll, setScroll] = useState(0)
     useEffect(() => {
         document.addEventListener("scroll", () => {
@@ -58,22 +58,10 @@ const Header = ({handleHidden}) => {
                                 </Link>
                             </li>
 
-                            {/* <li className="pt-4 pb-4">
-                                <Link href="dashboard/dashboard" legacyBehavior>
-                                    <a className="text-sm font-semibold text-blueGray-600 hover:text-blueGray-500">
-                                        Dashboard
-                                    </a>
-                                </Link>
-                            </li> */}
                         </ul>
                         <div className="hidden lg:block">
                             <Link href="/login" legacyBehavior>
-                                <a className="text-white bg-green-500 rounded btn-accent hover-up-2 hover:bg-green-600">Log In</a>
-                            </Link>
-                            <Link href="/signup" legacyBehavior>
-                                <a className="text-white bg-green-500 rounded btn-primary hover-up-2 btn-accent hover:bg-green-600">
-                                    Sign Up
-                                </a>
+                                <a className="text-white bg-green-500 rounded btn-accent hover-up-2 hover:bg-green-600">log Out</a>
                             </Link>
                         </div>
                         <div className="lg:hidden">
@@ -95,4 +83,4 @@ const Header = ({handleHidden}) => {
     );
 };
 
-export default Header;
+export default Header1;

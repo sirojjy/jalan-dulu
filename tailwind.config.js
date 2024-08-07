@@ -25,7 +25,28 @@ module.exports = {
           "blue-600": "#2563eb",
           "blue-700": "#1d4ed8",
           "blue-800": "#1e40af",
-          "blue-900": "#1e3a8a"
+          "blue-900": "#1e3a8a",
+          "red-50": "#fef2f2",
+        "red-100": "#fee2e2",
+        "red-200": "#fecaca",
+        "red-300": "#fca5a5",
+        "red-400": "#f87171",
+        "red-500": "#ef4444",
+        "red-600": "#dc2626",
+        "red-700": "#b91c1c",
+        "red-800": "#991b1b",
+        "red-900": "#7f1d1d",
+        "green-50": "#e7f5f3",
+        "green-100": "#c3e5de",
+        "green-200": "#9ed5c9",
+        "green-300": "#79c5b4",
+        "green-400": "#54b49f",
+        "green-500": "#39A885", // Warna utama
+        "green-600": "#2e8e71",
+        "green-700": "#23755e",
+        "green-800": "#195c4a",
+        "green-900": "#0f4237"
+
       },
       screens: {
           sm: "640px",
