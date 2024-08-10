@@ -94,11 +94,11 @@ const PageActivity = () => {
                     <p className="text-lg font-semibold">{`Price: $${item.price.toLocaleString()}`}</p>
                     <p className="text-lg font-semibold text-red-500">{`Discounted Price: $${item.price_discount.toLocaleString()}`}</p>
                     <p className="text-lg font-semibold">{`Rating: ${item.rating} / 5`}</p>
-                    <div>
+                    {/* <div>
                       <a className="block px-6 py-4 mb-4 text-xs font-semibold leading-none text-center text-white bg-blue-500 rounded sm:inline-block sm:mb-0 sm:mr-3 hover:bg-blue-700" href="#">
                         Explore
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}
