@@ -148,6 +148,24 @@ export const pageCategories = async () => {
   }
 };
 
+export const pageActivity = async () => {
+  try {
+    const response = await fetch(`${BASE_URL}api/v1/activities`, {
+      headers: {
+        'Content-Type': 'application/json',
+        'apiKey': API_KEY
+      }
+    });
+    if (!response.ok) {
+      throw new Error('Failed to fetch activities');
+    }
+    const data = await response.json();
+    return data.data; // Assuming the data is inside `data` property
+  } catch (error) {
+    console.error('Error fetching activities:', error);
+    return [];
+  }
+};
 
 
 

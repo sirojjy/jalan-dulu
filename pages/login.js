@@ -3,7 +3,6 @@ import { useRouter } from 'next/router';
 import Layout from '../components/layout/Layout';
 import { loginUser } from '../components/utils/auth';
 import Link from "next/link";
-import Cookies from 'js-cookie';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -17,13 +16,17 @@ const Login = () => {
             const response = await loginUser(email, password);
             console.log('Login response:', response);
             if (response.code === "200") {
-                // Simpan token ke cookies
-                Cookies.set('token', response.token, { path: '/' });
-                Cookies.set('role', response.data.role, { path: '/' });
+                // Simpan token dan role ke localStorage
+                localStorage.setItem('token', response.token);
+                localStorage.setItem('role', response.data.role);
+
+                // Tampilkan isi token di console
+                const token = localStorage.getItem('token');
+                console.log('Token stored in localStorage:', token);
 
                 console.log('Authentication successful. Redirecting to dashboard...');
                 // Redirect ke halaman dashboard
-                router.push('/dashboard/index_dashboard');
+                router.push('/dashboard/banner_admin');
             } else {
                 setError(response.message);
             }
